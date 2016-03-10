@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSM-se-Syv">
+                                <rect key="frame" x="270" y="230" width="61" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="6J1-Fr-H01"/>
+                                </constraints>
+                                <state key="normal" title="Ternary"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ternarySelected:" destination="BYZ-38-t0r" eventType="touchDown" id="ajk-Pd-9XA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a base (x:) then any number of that base" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7V-rY-dr0">
+                                <rect key="frame" x="143" y="123" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crr-y1-67o">
+                                <rect key="frame" x="402" y="230" width="55" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="2V7-DH-3YV"/>
+                                </constraints>
+                                <state key="normal" title="Octal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="octalButton:" destination="BYZ-38-t0r" eventType="touchDown" id="LEQ-ad-56B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyr-QU-FyB">
+                                <rect key="frame" x="143" y="230" width="65" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Decimal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="decimalSelected:" destination="BYZ-38-t0r" eventType="touchDown" id="UIA-Xr-Ofs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="crr-y1-67o" firstAttribute="leading" secondItem="WSM-se-Syv" secondAttribute="trailing" constant="59" id="0pT-ga-9Kq"/>
+                            <constraint firstItem="WSM-se-Syv" firstAttribute="leading" secondItem="Gyr-QU-FyB" secondAttribute="trailing" constant="50" id="3hN-lN-bk0"/>
+                            <constraint firstItem="WSM-se-Syv" firstAttribute="baseline" secondItem="crr-y1-67o" secondAttribute="baseline" id="6Qx-iR-tHr"/>
+                            <constraint firstItem="WSM-se-Syv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fxc-QK-8x6"/>
+                            <constraint firstItem="Gyr-QU-FyB" firstAttribute="top" secondItem="d7V-rY-dr0" secondAttribute="bottom" constant="77" id="Fxz-D8-tlT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gyr-QU-FyB" secondAttribute="bottom" constant="340" id="IrB-Ge-Irn"/>
+                            <constraint firstItem="d7V-rY-dr0" firstAttribute="centerX" secondItem="WSM-se-Syv" secondAttribute="centerX" id="VW0-Eh-KS8"/>
+                            <constraint firstItem="Gyr-QU-FyB" firstAttribute="leading" secondItem="d7V-rY-dr0" secondAttribute="leading" id="ijV-dT-XjB"/>
+                            <constraint firstItem="WSM-se-Syv" firstAttribute="baseline" secondItem="Gyr-QU-FyB" secondAttribute="baseline" id="kOr-3m-L7P"/>
+                            <constraint firstItem="crr-y1-67o" firstAttribute="trailing" secondItem="d7V-rY-dr0" secondAttribute="trailing" id="wXx-pm-dd6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decimalButton" destination="Gyr-QU-FyB" id="YjA-XS-0NI"/>
+                        <outlet property="octalButton" destination="crr-y1-67o" id="Tir-rV-w2b"/>
+                        <outlet property="ternaryButton" destination="WSM-se-Syv" id="6GJ-bN-Wo4"/>
+                        <outlet property="userText" destination="d7V-rY-dr0" id="ZkP-S2-Jt7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="382"/>
+        </scene>
+    </scenes>
+</document>
